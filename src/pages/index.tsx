@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>getstarted | HomePage </title>
+        <title>Gericht | HomePage </title>
       </Head>
 
       <main className={`min-h-screen `}>
