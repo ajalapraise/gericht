@@ -1,3 +1,4 @@
+import Button from '@/components/Button/Button'
 import { Herosection } from '@/components/Landing page/Landingpage'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -12,6 +13,7 @@ export default function Home() {
 
       <main className={`min-h-screen `}>
         <Herosection />
+        <Button />
       </main>
     </>
   )
