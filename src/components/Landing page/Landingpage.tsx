@@ -89,6 +89,17 @@ export const Menu = () => {
                 </div>
                 <h1>Today’s Special</h1>
             </div>
+            <div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+            </div>
 
         </div>
     )
