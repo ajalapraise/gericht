@@ -4,14 +4,16 @@ export const cormorantUpright = Cormorant_Upright({
     variable: '--cormorantUpright',
     subsets: ["latin"],
     display: "swap",
-    weight: ["300", "400", "500", "600", "700"],
+    weight: '300',
+    adjustFontFallback: false
+
 });
 
 export const openSans = Open_Sans({
     variable: '--openSans',
     subsets: ["latin"],
     display: "auto",
-    weight: ["300", "400", "500", "600", "700", "800"],
+    weight: '300',
     adjustFontFallback: false
 });
 

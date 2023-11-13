@@ -14,5 +14,8 @@
 
   .bgImage {
   background-image: url('../../public/Images/BG.png');
+  background-size: cover; /* or 'contain' depending on your needs */
+  background-position: center;
+  background-repeat: no-repeat;
 }
 }

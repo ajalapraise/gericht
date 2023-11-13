@@ -29,8 +29,6 @@ const config: Config = {
     },
     extend: {
       fontFamily: {
-        // Poppins: ["poppins", ...defaultTheme.fontFamily.sans],
-        // Revalia: ["revalia", ...defaultTheme.fontFamily.sans],
         sans: ["var(--openSans)"],
         Cormorant_Upright: ['var(--cormorantUpright)']
       },
