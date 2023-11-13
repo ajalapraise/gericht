@@ -47,8 +47,8 @@ export const About = () => {
             <div className='absolute w-[300px] h-[300px]'>
                 <Image src={g} alt='' fill />
             </div>
-            <div className={`flex justify-between items-center w-[1000px]`}>
-                <div className='flex flex-col items-end w-[400px] z-[99999] space-y-6'>
+            <div className={`flex justify-between items-center w-[1000px] z-[99998] `}>
+                <div className='flex flex-col items-end w-[400px]  space-y-6'>
                     <div className='flex flex-col items-end'>
                         <h1 className={`${cormorantUpright.className} text-[#DCCA87] text-2xl`}>About Us</h1>
                         <div className='ml-0 w-[50px] relative rotate-180 h-[10px]'>
@@ -62,7 +62,7 @@ export const About = () => {
                 <div className={`w-[50px] h-[500px] relative`}>
                     <Image src={knife} alt='' fill />
                 </div>
-                <div className='flex flex-col items-start w-[400px] z-[99999] space-y-6'>
+                <div className='flex flex-col items-start w-[400px] space-y-6'>
                     <div className='flex flex-col items-start '>
                         <h1 className={`${cormorantUpright.className} text-[#DCCA87] text-2xl`}>Our History</h1>
                         <div className='ml-0 w-[50px] relative  h-[10px]'>
@@ -73,6 +73,21 @@ export const About = () => {
                     <Button btnValue='Know More' className='w-[100px] h-[35px] text-[10px] font-semibold tracking-widest' />
 
                 </div>
+            </div>
+
+        </div>
+    )
+}
+
+export const Menu = () => {
+    return (
+        <div className={`bg-[#0C0B08] p-20 flex justify-center items-center`}>
+            <div className={`${cormorantUpright.className} flex flex-col justify-center items-center`}>
+                <h1>Menu that fits you palatte</h1>
+                <div className='ml-0 w-[30px] relative  h-[10px]'>
+                    <Image src={spoon} fill alt='' />
+                </div>
+                <h1>Today’s Special</h1>
             </div>
 
         </div>
