@@ -2,6 +2,10 @@ import React from 'react'
 import { cormorantUpright } from '@/styles/font'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import Image from 'next/image'
+
+//svg and images
+import line from '../../../public/svgs/Line.svg'
 
 const Navbar = () => {
     const router = useRouter()
@@ -11,7 +15,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav className='flex fixed text-[#fff] w-[92%] justify-between h-28 items-center py-8'>
+        <nav className='flex fixed z-[99999] text-[#fff] w-full justify-between h-24 items-center py-8  px-10 bg-[#0C0B08]'>
             <div className={`${cormorantUpright.className} flex  items-center h-full text-xl`}>
                 <Link href='/'>Gerícht</Link>
             </div>
@@ -54,8 +58,10 @@ const Navbar = () => {
                         className={` ${isLinkActive("login") ? "text-[#DCCA87]" : ""}`}
                     >Log in / registration</Link>
                 </li>
-                <li className='w-[1px] h-full  bg-[white]'>
-
+                <li className='h-full'>
+                    <div className='w-5 relative h-full'>
+                        <Image src={line} alt='' fill />
+                    </div>
                 </li>
                 <li>
                     <Link

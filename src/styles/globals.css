@@ -6,10 +6,13 @@
 @layer base {
   html,
   body {
-    @apply font-sans;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
   }
+
+  .bgImage {
+  background-image: url('../../public/Images/BG.png');
+}
 }

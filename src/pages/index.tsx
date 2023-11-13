@@ -1,5 +1,6 @@
 import Button from '@/components/Button/Button'
-import { Herosection } from '@/components/Landing page/Landingpage'
+import { About, Herosection } from '@/components/Landing page/Landingpage'
+import { openSans } from '@/styles/font'
 import Head from 'next/head'
 import Image from 'next/image'
 
@@ -11,9 +12,9 @@ export default function Home() {
         <title>Gericht | HomePage </title>
       </Head>
 
-      <main className={`min-h-screen `}>
+      <main className={`min-h-screen ${openSans.className} `}>
         <Herosection />
-        <Button />
+        <About />
       </main>
     </>
   )
