@@ -9,6 +9,7 @@ import { cormorantUpright } from '@/styles/font'
 import heroImg from '../../../public/Images/Hero-img.png'
 import spoon from '../../../public/svgs/spoon.svg'
 import g from '../../../public/svgs/G.svg'
+import knife from '../../../public/svgs/knife.svg'
 
 export const Herosection = () => {
     return (
@@ -42,11 +43,11 @@ export const Herosection = () => {
 
 export const About = () => {
     return (
-        <div className={` h-[600px] bgImage w-full relative flex items-center justify-center`}>
+        <div className={` h-[600px] bgImage w-full relative p-20 flex items-center justify-center`}>
             <div className='absolute w-[300px] h-[300px]'>
                 <Image src={g} alt='' fill />
             </div>
-            <div className={`flex justify-between w-[900px]`}>
+            <div className={`flex justify-between items-center w-[1000px]`}>
                 <div className='flex flex-col items-end w-[400px] z-[99999] space-y-6'>
                     <div className='flex flex-col items-end'>
                         <h1 className={`${cormorantUpright.className} text-[#DCCA87] text-2xl`}>About Us</h1>
@@ -54,9 +55,12 @@ export const About = () => {
                             <Image src={spoon} fill alt='' />
                         </div>
                     </div>
-                    <p className={`text-[#AAA] text-right text-[12px]`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
-                    <Button btnValue='Know More' className='w-[120px] h-[35px] text-[10px] font-semibold tracking-widest' />
+                    <p className={`text-[#AAA] text-right text-[12px] w-[350px]`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
+                    <Button btnValue='Know More' className='w-[100px] h-[35px] text-[10px] font-semibold tracking-widest' />
 
+                </div>
+                <div className={`w-[50px] h-[500px] relative`}>
+                    <Image src={knife} alt='' fill />
                 </div>
                 <div className='flex flex-col items-start w-[400px] z-[99999] space-y-6'>
                     <div className='flex flex-col items-start '>
@@ -65,8 +69,8 @@ export const About = () => {
                             <Image src={spoon} fill alt='' />
                         </div>
                     </div>
-                    <p className={`text-[#AAA] text-left text-[12px]`}>Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet..</p>
-                    <Button btnValue='Know More' className='w-[120px] h-[35px] text-[10px] font-semibold tracking-widest' />
+                    <p className={`text-[#AAA] text-left text-[12px] w-[350px]`}>Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet..</p>
+                    <Button btnValue='Know More' className='w-[100px] h-[35px] text-[10px] font-semibold tracking-widest' />
 
                 </div>
             </div>

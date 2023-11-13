@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 import Image from 'next/image'
 
 //svg and images
-import line from '../../../public/svgs/Line.svg'
+import navLine from '../../../public/svgs/Line.svg'
 
 const Navbar = () => {
     const router = useRouter()
@@ -60,7 +60,7 @@ const Navbar = () => {
                 </li>
                 <li className='h-full'>
                     <div className='w-5 relative h-full'>
-                        <Image src={line} alt='' fill />
+                        <Image src={navLine} alt='' fill />
                     </div>
                 </li>
                 <li>
