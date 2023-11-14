@@ -5,12 +5,18 @@ import { cormorantUpright } from '@/styles/font'
 
 
 
-//images and svgs
+
+//icons, images and svgs
 import heroImg from '../../../public/Images/Hero-img.png'
 import spoon from '../../../public/svgs/spoon.svg'
 import g from '../../../public/svgs/G.svg'
 import knife from '../../../public/svgs/knife.svg'
 import flask from '../../../public/Images/flask.png'
+import chefImg from '../../../public/Images/chefImage.png'
+import quote from '../../../public/svgs/quote.svg'
+import signature from '../../../public/svgs/signature.svg'
+
+import { BiSolidQuoteAltLeft } from 'react-icons/bi'
 
 export const Herosection = () => {
     return (
@@ -181,7 +187,48 @@ export const Menu = () => {
                     </li>
                 </ul>
             </div>
+            <div>
+                <Button btnValue='View More' className='w-[100px] mt-5 h-[35px] text-[10px] font-semibold tracking-widest' />
+            </div>
 
+        </div>
+    )
+}
+
+export const ChefWord = () => {
+    return (
+        <div className={` h-[600px] bgImage w-full relative p-10 flex items-center justify-center`}>
+            <div className={`w-[900px] h-[500px] flex justify-between items-center`}>
+                <div className='relative w-[370px]  h-[450px]'>
+                    <Image fill alt='' src={chefImg} />
+                </div>
+
+                <div className=' items-center space-y-8'>
+                    <div className={`${cormorantUpright.className} flex flex-col justify-center items-start`}>
+                        <h1 className='text-[#FFF] text-[16px] tracking-wider'>Chef’s Word</h1>
+                        <div className=' w-[25px] relative  h-[10px]'>
+                            <Image src={spoon} fill alt='' />
+                        </div>
+                        <h2 className={`text-[#DCCA87] text-2xl tracking-widest`}>What We Believe In</h2>
+                    </div>
+
+                    <div className='flex flex-col w-[500px] text-base italic'>
+                        <p className='flex  items-center h-[30px]'><span className='text-[#FFF] text-2xl mr-2'><BiSolidQuoteAltLeft /></span>Lorem ipsum dolor sit amet consectetur adipiscing elit auctor sit .</p>
+                        <p>auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue ac consequat, aliquam molestie lectus eu. Congue iaculis integer curabitur semper sit nunc.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h1 className={`${cormorantUpright.className} text-[#DCCA87] text-lg`}>Kevin Luo</h1>
+                        <h2 className='text-[12px] font-bold'>Chef & Founder</h2>
+                    </div>
+
+                    <div className='w-[150px] relative  h-[60px]'>
+                        <Image src={signature} fill alt='' />
+                    </div>
+
+                </div>
+            </div>
         </div>
     )
 }

@@ -67,7 +67,7 @@ const Navbar = () => {
                     <Link
                         href='#'
                         className={` ${isLinkActive("book") ? "text-[#DCCA87]" : ""}`}
-                    >book table</Link>
+                    >Book table</Link>
                 </li>
             </ul>
         </nav >
