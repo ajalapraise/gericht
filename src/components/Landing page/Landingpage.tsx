@@ -10,6 +10,7 @@ import heroImg from '../../../public/Images/Hero-img.png'
 import spoon from '../../../public/svgs/spoon.svg'
 import g from '../../../public/svgs/G.svg'
 import knife from '../../../public/svgs/knife.svg'
+import flask from '../../../public/Images/flask.png'
 
 export const Herosection = () => {
     return (
@@ -81,7 +82,7 @@ export const About = () => {
 
 export const Menu = () => {
     return (
-        <div className={`bg-[#0C0B08] p-20 flex justify-center items-center`}>
+        <div className={`bg-[#0C0B08] p-20 flex flex-col justify-center items-center`}>
             <div className={`${cormorantUpright.className} flex flex-col justify-center items-center`}>
                 <h1>Menu that fits you palatte</h1>
                 <div className='ml-0 w-[30px] relative  h-[10px]'>
@@ -89,16 +90,97 @@ export const Menu = () => {
                 </div>
                 <h1>Today’s Special</h1>
             </div>
-            <div>
-                <div>
-
+            <div className={`flex justify-center items-center`}>
+                <ul>
+                    <h1 className={`${cormorantUpright.className}`}>Wine & Beer</h1>
+                    <li>
+                        <div className={`${cormorantUpright.className} flex justify-between items-center w-[250px] h-[40px]`}>
+                            <h2 className={`text-[#DCCA87] w-[120px] flex items-center justify-start`}>Chapel Hill Shiraz</h2>
+                            <span className='w-[70px] h-[0.5px] bg-[#FAFAFA] flex items-center justify-center'></span>
+                            <h2 className='w-[30px] flex items-center justify-center'>$56</h2>
+                        </div>
+                        <h2>AU | Bottle</h2>
+                    </li>
+                    <li>
+                        <div className={`${cormorantUpright.className} flex justify-between items-center w-[250px] h-[40px]`}>
+                            <h2 className={`text-[#DCCA87] w-[120px] flex items-center justify-start`}>Catena Malbec</h2>
+                            <span className='w-[60px] h-[1px] bg-[#FAFAFA] flex items-center justify-center'></span>
+                            <h2 className='w-[30px] flex items-center justify-center'>$59</h2>
+                        </div>
+                        <h2>AR | Bottle</h2>
+                    </li>
+                    <li>
+                        <div className={`${cormorantUpright.className} flex justify-between items-center w-[250px] h-[40px]`}>
+                            <h2 className={`text-[#DCCA87] w-[120px] flex items-center justify-start`}>La Vieille Rosé</h2>
+                            <span className='w-[60px] h-[1px] bg-[#FAFAFA] flex items-center justify-center'></span>
+                            <h2 className='w-[30px] flex items-center justify-center'>$44</h2>
+                        </div>
+                        <h2>FR | 750 ml</h2>
+                    </li>
+                    <li>
+                        <div className={`${cormorantUpright.className} flex justify-between items-center w-[250px] h-[40px]`}>
+                            <h2 className={`text-[#DCCA87] w-[120px] flex items-center justify-start`}>Rhino Pale Ale</h2>
+                            <span className='w-[60px] h-[1px] bg-[#FAFAFA] flex items-center justify-center'></span>
+                            <h2 className='w-[30px] flex items-center justify-center'>$31</h2>
+                        </div>
+                        <h2>CA | 750 ml</h2>
+                    </li>
+                    <li>
+                        <div className={`${cormorantUpright.className} flex justify-between items-center w-[250px] h-[40px]`}>
+                            <h2 className={`text-[#DCCA87] w-[120px] flex items-center justify-start`}>Irish Guinness
+                            </h2>
+                            <span className='w-[60px] h-[1px] bg-[#FAFAFA] flex items-center justify-center'></span>
+                            <h2 className='w-[30px] flex items-center justify-center'>$26</h2>
+                        </div>
+                        <h2>IE | 750 ml</h2>
+                    </li>
+                </ul>
+                <div className={`relative w-[200px] h-[300px]`}>
+                    <Image src={flask} alt='' fill />
                 </div>
-                <div>
-
-                </div>
-                <div>
-
-                </div>
+                <ul>
+                    <h1>Cocktails</h1>
+                    <li>
+                        <div>
+                            <h2>Chapel Hill Shiraz</h2>
+                            <div></div>
+                            <h2>$56</h2>
+                        </div>
+                        <h2>AU | Bottle</h2>
+                    </li>
+                    <li>
+                        <div>
+                            <h2>Catena Malbec</h2>
+                            <div></div>
+                            <h2>$59</h2>
+                        </div>
+                        <h2>AR | Bottle</h2>
+                    </li>
+                    <li>
+                        <div>
+                            <h2>La Vieille Rosé</h2>
+                            <div></div>
+                            <h2>$44</h2>
+                        </div>
+                        <h2>FR | 750 ml</h2>
+                    </li>
+                    <li>
+                        <div>
+                            <h2>Rhino Pale Ale</h2>
+                            <div></div>
+                            <h2>$31</h2>
+                        </div>
+                        <h2>CA | 750 ml</h2>
+                    </li>
+                    <li>
+                        <div>
+                            <h2>Irish Guinness</h2>
+                            <div></div>
+                            <h2>$26</h2>
+                        </div>
+                        <h2>IE | 750 ml</h2>
+                    </li>
+                </ul>
             </div>
 
         </div>
