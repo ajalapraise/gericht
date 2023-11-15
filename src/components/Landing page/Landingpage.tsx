@@ -15,6 +15,8 @@ import flask from '../../../public/Images/flask.png'
 import chefImg from '../../../public/Images/chefImage.png'
 import quote from '../../../public/svgs/quote.svg'
 import signature from '../../../public/svgs/signature.svg'
+import videoImg from '../../../public/Images/video.png'
+
 
 import { BiSolidQuoteAltLeft } from 'react-icons/bi'
 
@@ -197,7 +199,7 @@ export const Menu = () => {
 
 export const ChefWord = () => {
     return (
-        <div className={` h-[600px] bgImage w-full relative p-10 flex items-center justify-center`}>
+        <div className={` h-[600px] bgImage w-full relative p-10 flex flex-col items-center justify-center`}>
             <div className={`w-[900px] h-[500px] flex justify-between items-center`}>
                 <div className='relative w-[370px]  h-[450px]'>
                     <Image fill alt='' src={chefImg} />
@@ -229,6 +231,28 @@ export const ChefWord = () => {
 
                 </div>
             </div>
+            {/* <video controls>
+                <source src={videoImg} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video> */}
+
+        </div>
+    )
+}
+
+export const Video = () => {
+    return (
+        <div className='relative w-full h-[500px] cursor-pointer'>
+            <Image src={videoImg} fill alt='' />
+        </div>
+
+    )
+}
+
+export const Awards = () => {
+    return (
+        <div>
+
         </div>
     )
 }

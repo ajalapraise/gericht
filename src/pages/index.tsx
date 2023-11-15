@@ -1,5 +1,5 @@
 import Button from '@/components/Button/Button'
-import { About, ChefWord, Herosection, Menu } from '@/components/Landing page/Landingpage'
+import { About, ChefWord, Herosection, Menu, Video } from '@/components/Landing page/Landingpage'
 import { openSans } from '@/styles/font'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -17,6 +17,7 @@ export default function Home() {
         <About />
         <Menu />
         <ChefWord />
+        <Video />
       </main>
     </>
   )
