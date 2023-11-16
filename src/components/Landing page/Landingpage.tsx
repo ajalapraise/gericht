@@ -16,7 +16,12 @@ import chefImg from '../../../public/Images/chefImage.png'
 import quote from '../../../public/svgs/quote.svg'
 import signature from '../../../public/svgs/signature.svg'
 import videoImg from '../../../public/Images/video.png'
-
+import laurelsLogo from '../../../public/svgs/laurelsLogo.svg'
+import award1 from '../../../public/svgs/award1.svg'
+import award2 from '../../../public/svgs/award2.svg'
+import award3 from '../../../public/svgs/award3.svg'
+import award4 from '../../../public/svgs/award4.svg'
+import laurelsImg from '../../../public/Images/laurelsImg.png'
 
 import { BiSolidQuoteAltLeft } from 'react-icons/bi'
 
@@ -251,7 +256,63 @@ export const Video = () => {
 
 export const Awards = () => {
     return (
-        <div>
+        <div className={`flex flex-col relative bgImage  p-20`}>
+            <div className={`absolute w-[150px] h-[100px] `}>
+                <Image src={laurelsLogo} alt='' fill />
+            </div>
+
+            <div className='flex justify-center items-center'>
+                <div>
+                    <div className={`${cormorantUpright.className}`}>
+                        <h1 className='text-[white] text-sm'>Awards & Recognition</h1>
+                        <div className='ml-0 w-[30px] relative  h-[10px]'>
+                            <Image src={spoon} fill alt='' />
+                        </div>
+                        <h1>Our Laurels</h1>
+                    </div>
+                    <ul className='w-[700px] flex flex-wrap'>
+                        <li className={`flex h-[200px] w-[300px] items-center`}>
+                            <div className={`relative w-[200px] h-[100px] `}>
+                                <Image src={award2} alt='' fill />
+                            </div>
+                            <div className={`w-[250px]`}>
+                                <h1>Bib Gourmond</h1>
+                                <h3>Lorem ipsum dolor sit amet, consectetur.</h3>
+                            </div>
+                        </li>
+                        <li className={`flex h-[200px] w-[300px] items-center`}>
+                            <div className={`relative w-[200px] h-[100px] `}>
+                                <Image src={award2} alt='' fill />
+                            </div>
+                            <div className={`w-[250px]`}>
+                                <h1>Bib Gourmond</h1>
+                                <h3>Lorem ipsum dolor sit amet, consectetur.</h3>
+                            </div>
+                        </li>
+                        <li className={`flex h-[200px] w-[300px] items-center`}>
+                            <div className={`relative w-[200px] h-[100px] `}>
+                                <Image src={award2} alt='' fill />
+                            </div>
+                            <div className={`w-[250px]`}>
+                                <h1>Bib Gourmond</h1>
+                                <h3>Lorem ipsum dolor sit amet, consectetur.</h3>
+                            </div>
+                        </li>
+                        <li className={`flex h-[200px] w-[300px] items-center`}>
+                            <div className={`relative w-[200px] h-[100px] `}>
+                                <Image src={award2} alt='' fill />
+                            </div>
+                            <div className={`w-[250px]`}>
+                                <h1>Bib Gourmond</h1>
+                                <h3>Lorem ipsum dolor sit amet, consectetur.</h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div className='relative w-[400px] h-[500px]'>
+                    <Image src={laurelsImg} alt='' fill />
+                </div>
+            </div>
 
         </div>
     )
