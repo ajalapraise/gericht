@@ -257,54 +257,54 @@ export const Video = () => {
 export const Awards = () => {
     return (
         <div className={`flex flex-col relative bgImage  p-20`}>
-            <div className={`absolute w-[150px] h-[100px] `}>
+            <div className={`absolute w-[150px] h-[80px] top-10 left-1 `}>
                 <Image src={laurelsLogo} alt='' fill />
             </div>
 
             <div className='flex justify-center items-center'>
-                <div>
-                    <div className={`${cormorantUpright.className}`}>
-                        <h1 className='text-[white] text-sm'>Awards & Recognition</h1>
-                        <div className='ml-0 w-[30px] relative  h-[10px]'>
+                <div className='px-5 space-y-4'>
+                    <div className={`${cormorantUpright.className} flex flex-col`}>
+                        <h1 className='text-[white] text-base ml-7 '>Awards & Recognition</h1>
+                        <div className='ml-7    w-[30px] relative flex h-[10px]'>
                             <Image src={spoon} fill alt='' />
                         </div>
-                        <h1>Our Laurels</h1>
+                        <h1 className='text-[#DCCA87] text-[35px] ml-7 '>Our Laurels</h1>
                     </div>
-                    <ul className='w-[700px] flex flex-wrap'>
-                        <li className={`flex h-[200px] w-[300px] items-center`}>
-                            <div className={`relative w-[200px] h-[100px] `}>
-                                <Image src={award2} alt='' fill />
+                    <ul className='w-[600px] flex justify-between flex-wrap'>
+                        <li className={`flex h-[120px] w-[300px] items-center`}>
+                            <div className={`relative w-[120px] h-[80px] `}>
+                                <Image src={award1} alt='' fill />
                             </div>
-                            <div className={`w-[250px]`}>
-                                <h1>Bib Gourmond</h1>
-                                <h3>Lorem ipsum dolor sit amet, consectetur.</h3>
-                            </div>
-                        </li>
-                        <li className={`flex h-[200px] w-[300px] items-center`}>
-                            <div className={`relative w-[200px] h-[100px] `}>
-                                <Image src={award2} alt='' fill />
-                            </div>
-                            <div className={`w-[250px]`}>
-                                <h1>Bib Gourmond</h1>
-                                <h3>Lorem ipsum dolor sit amet, consectetur.</h3>
+                            <div className={`w-[150px] space-y-2 flex flex-col justify-center p-2`}>
+                                <h1 className={`text-[#DCCA87] text-base ${cormorantUpright.className}`}>Bib Gourmond</h1>
+                                <h3 className='text-[12px] font-extrabold'>Lorem ipsum dolor sit amet, consectetur.</h3>
                             </div>
                         </li>
-                        <li className={`flex h-[200px] w-[300px] items-center`}>
-                            <div className={`relative w-[200px] h-[100px] `}>
+                        <li className={`flex h-[120px] w-[300px] items-center`}>
+                            <div className={`relative w-[120px] h-[80px] `}>
                                 <Image src={award2} alt='' fill />
                             </div>
-                            <div className={`w-[250px]`}>
-                                <h1>Bib Gourmond</h1>
-                                <h3>Lorem ipsum dolor sit amet, consectetur.</h3>
+                            <div className={`w-[150px] space-y-2 flex flex-col justify-center p-2`}>
+                                <h1 className={`text-[#DCCA87] text-base ${cormorantUpright.className}`}>Rising Star</h1>
+                                <h3 className='text-[12px] font-extrabold'>Lorem ipsum dolor sit amet, consectetur.</h3>
                             </div>
                         </li>
-                        <li className={`flex h-[200px] w-[300px] items-center`}>
-                            <div className={`relative w-[200px] h-[100px] `}>
-                                <Image src={award2} alt='' fill />
+                        <li className={`flex h-[120px] w-[300px] items-center`}>
+                            <div className={`relative w-[120px] h-[80px] `}>
+                                <Image src={award3} alt='' fill />
                             </div>
-                            <div className={`w-[250px]`}>
-                                <h1>Bib Gourmond</h1>
-                                <h3>Lorem ipsum dolor sit amet, consectetur.</h3>
+                            <div className={`w-[150px] space-y-2 flex flex-col justify-center p-2`}>
+                                <h1 className={`text-[#DCCA87] text-base ${cormorantUpright.className}`}>AA Hospitality </h1>
+                                <h3 className='text-[12px] font-extrabold'>Lorem ipsum dolor sit amet, consectetur.</h3>
+                            </div>
+                        </li>
+                        <li className={`flex h-[120px] w-[300px] items-center`}>
+                            <div className={`relative w-[120px] h-[80px] `}>
+                                <Image src={award4} alt='' fill />
+                            </div>
+                            <div className={`w-[150px] space-y-2 flex flex-col justify-center p-2`}>
+                                <h1 className={`text-[#DCCA87] text-base ${cormorantUpright.className}`}>Outstanding Chef</h1>
+                                <h3 className='text-[12px] font-extrabold'>Lorem ipsum dolor sit amet, consectetur.</h3>
                             </div>
                         </li>
                     </ul>
