@@ -247,7 +247,7 @@ export const ChefWord = () => {
 
 export const Video = () => {
     return (
-        <div className='relative w-full h-[500px] cursor-pointer'>
+        <div className='relative w-full h-[520px] cursor-pointer'>
             <Image src={videoImg} fill alt='' />
         </div>
 
@@ -315,5 +315,27 @@ export const Awards = () => {
             </div>
 
         </div>
+    )
+}
+
+export const Gallery = () => {
+    return (
+        <div className='py-10 pl-10'>
+            <div className={` flex flex-col w-[350px] ml-5 space-y-5 h-[200px]`}>
+                <div className={`${cormorantUpright.className}`}>
+                    <h1 className={`text-[white] text-lg `}>Instagram</h1>
+                    <div className={`w-[30px] relative flex h-[10px] `}>
+                        <Image src={spoon} fill alt='' />
+                    </div>
+                    <h1 className={`text-[#DCCA87] text-[35px] `}>Photo Gallery</h1>
+                </div>
+
+                <p className='font-light text-[12px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.</p>
+                <Button btnValue='View More' className='w-[120px] h-[35px] text-[10px] font-semibold tracking-widest' />
+            </div>
+            <div>
+
+            </div>
+        </div >
     )
 }
