@@ -248,7 +248,7 @@ export const ChefWord = () => {
 export const Video = () => {
     return (
         <div className='relative w-full h-[520px] cursor-pointer'>
-            <Image src='/Images/video.png' fill alt='' />
+            <Image src='/Images/Video.png' fill alt='' />
         </div>
 
     )
