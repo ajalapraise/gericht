@@ -23,7 +23,7 @@ const Slider: React.FC<SliderComponentProps> = ({ images }) => {
             {images.map((src, index) => (
                 <div
                     key={index}
-                    className={`relative ${hoveredStates === index ? 'w-[200px] h-[302px]' : ' w-[200px] h-[300px]'}`}
+                    className={`relative transition-transform transform w-[200px] h-[300px] ${hoveredStates === index ? 'scale-110' : 'scale-100 '}`}
                     onMouseEnter={() => handleMouseEnter(index)}
                     onMouseLeave={() => handleMouseLeave(index)}
                 >
