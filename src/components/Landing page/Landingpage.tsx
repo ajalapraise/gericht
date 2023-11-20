@@ -320,13 +320,13 @@ export const Awards = () => {
 
 export const Gallery: React.FC = () => {
     const images = [
-        '/Images/gallery/Image 1.png',
-        '/Images/gallery/Image 2.png',
-        '/Images/gallery/Image 3.png',
-        '/Images/gallery/Image 4.png',
+        '/Images/gallery/image 1.png',
+        '/Images/gallery/image 2.png',
+        '/Images/gallery/image 3.png',
+        '/Images/gallery/image 4.png',
     ];
     return (
-        <div className='py-10 pl-10 flex'>
+        <div className='py-10 pl-10 flex items-center'>
             <div className={` flex flex-col w-[350px] ml-5 space-y-5 h-[200px]`}>
                 <div className={`${cormorantUpright.className}`}>
                     <h1 className={`text-[white] text-lg `}>Instagram</h1>
