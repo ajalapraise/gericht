@@ -15,17 +15,13 @@ import knife from '../../../public/svgs/knife.svg'
 import flask from '../../../public/Images/flask.png'
 import chefImg from '../../../public/Images/chefImage.png'
 import signature from '../../../public/svgs/signature.svg'
-import videoImg from '../../../public/Images/video.png'
 import laurelsLogo from '../../../public/svgs/laurelsLogo.svg'
 import award1 from '../../../public/svgs/award1.svg'
 import award2 from '../../../public/svgs/award2.svg'
 import award3 from '../../../public/svgs/award3.svg'
 import award4 from '../../../public/svgs/award4.svg'
 import laurelsImg from '../../../public/Images/laurelsImg.png'
-import img1 from '../../../public/Images/gallery/Image 1.png'
-import img2 from '../../../public/Images/gallery/Image 2.png'
-import img3 from '../../../public/Images/gallery/Image 3.png'
-import img4 from '../../../public/Images/gallery/Image 4.png'
+
 
 import { BiSolidQuoteAltLeft } from 'react-icons/bi'
 
@@ -252,7 +248,7 @@ export const ChefWord = () => {
 export const Video = () => {
     return (
         <div className='relative w-full h-[520px] cursor-pointer'>
-            <Image src={videoImg} fill alt='' />
+            <Image src='/Images/video.png' fill alt='' />
         </div>
 
     )
@@ -323,7 +319,12 @@ export const Awards = () => {
 }
 
 export const Gallery: React.FC = () => {
-    const images = [img1, img2, img3, img4];
+    const images = [
+        '/Images/gallery/Image 1.png',
+        '/Images/gallery/Image 2.png',
+        '/Images/gallery/Image 3.png',
+        '/Images/gallery/Image 4.png',
+    ];
     return (
         <div className='py-10 pl-10 flex'>
             <div className={` flex flex-col w-[350px] ml-5 space-y-5 h-[200px]`}>

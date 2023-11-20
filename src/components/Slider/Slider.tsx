@@ -4,7 +4,7 @@ import Image, { StaticImageData } from 'next/image';
 import hoverImg from '../../../public/Images/gallery/Hover image.png'
 
 interface SliderComponentProps {
-    images: StaticImageData[];
+    images: string[];
 }
 
 const Slider: React.FC<SliderComponentProps> = ({ images }) => {
@@ -19,17 +19,17 @@ const Slider: React.FC<SliderComponentProps> = ({ images }) => {
     };
 
     return (
-        <div className='flex space-x-5'>
+        <div className={`flex space-x-5`}>
             {images.map((src, index) => (
                 <div
                     key={index}
-                    className={`relative w-[200px] h-[300px]`}
+                    className={`relative ${hoveredStates === index ? 'w-[200px] h-[302px]' : ' w-[200px] h-[300px]'}`}
                     onMouseEnter={() => handleMouseEnter(index)}
                     onMouseLeave={() => handleMouseLeave(index)}
                 >
                     <Image src={src} alt='' layout="fill" objectFit="cover" />
                     <Image
-                        src={hoverImg}
+                        src='/Images/gallery/Hover image.png'
                         alt=''
                         layout="fill"
                         objectFit="cover"
