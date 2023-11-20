@@ -320,7 +320,7 @@ export const Awards = () => {
 
 export const Gallery: React.FC = () => {
     const images = [
-        '/Images/gallery/image 1.png',
+        '/Images/gallery/Image 1.png',
         '/Images/gallery/image 2.png',
         '/Images/gallery/image 3.png',
         '/Images/gallery/image 4.png',
