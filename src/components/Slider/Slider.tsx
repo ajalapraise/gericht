@@ -8,18 +8,14 @@ interface SliderComponentProps {
 }
 
 const Slider: React.FC<SliderComponentProps> = ({ images }) => {
-    const [hoveredStates, setHoveredStates] = useState<number[]>(images.map(() => 0));
+    const [hoveredStates, setHoveredStates] = useState(-1);
 
     const handleMouseEnter = (index: number): void => {
-        const updatedStates = [...hoveredStates];
-        updatedStates[index] = -1;
-        setHoveredStates(updatedStates);
+        setHoveredStates(index);
     };
 
     const handleMouseLeave = (index: number): void => {
-        const updatedStates = [...hoveredStates];
-        updatedStates[index] = 0;
-        setHoveredStates(updatedStates);
+        setHoveredStates(-1);
     };
 
     return (
@@ -37,7 +33,7 @@ const Slider: React.FC<SliderComponentProps> = ({ images }) => {
                         alt=''
                         layout="fill"
                         objectFit="cover"
-                        className={`absolute ${hoveredStates[index] ? '' : 'hidden'}`} />
+                        className={`absolute ${hoveredStates === index ? '' : 'hidden'}`} />
                 </div>
             ))}
         </div>
