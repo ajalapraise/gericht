@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import Button from '../Button/Button'
 import { cormorantUpright } from '@/styles/font'
+import Slider from '../Slider/Slider'
 
 
 
@@ -22,6 +23,10 @@ import award2 from '../../../public/svgs/award2.svg'
 import award3 from '../../../public/svgs/award3.svg'
 import award4 from '../../../public/svgs/award4.svg'
 import laurelsImg from '../../../public/Images/laurelsImg.png'
+import img1 from '../../../public/Images/gallery/Image 1.png'
+import img2 from '../../../public/Images/gallery/Image 2.png'
+import img3 from '../../../public/Images/gallery/Image 3.png'
+import img4 from '../../../public/Images/gallery/Image 4.png'
 
 import { BiSolidQuoteAltLeft } from 'react-icons/bi'
 
@@ -318,9 +323,10 @@ export const Awards = () => {
     )
 }
 
-export const Gallery = () => {
+export const Gallery: React.FC = () => {
+    const images = [img1, img2, img3, img4];
     return (
-        <div className='py-10 pl-10'>
+        <div className='py-10 pl-10 flex'>
             <div className={` flex flex-col w-[350px] ml-5 space-y-5 h-[200px]`}>
                 <div className={`${cormorantUpright.className}`}>
                     <h1 className={`text-[white] text-lg `}>Instagram</h1>
@@ -333,9 +339,7 @@ export const Gallery = () => {
                 <p className='font-light text-[12px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.</p>
                 <Button btnValue='View More' className='w-[120px] h-[35px] text-[10px] font-semibold tracking-widest' />
             </div>
-            <div>
-
-            </div>
+            <Slider images={images} />
         </div >
     )
 }
