@@ -44,9 +44,16 @@ export const Herosection = () => {
 
                 </div>
                 <div className='w-1/2 flex items-center justify-center'>
-                    <div className='w-[400px] relative h-[400px]'>
-                        <Image src={heroImg} fill alt='' />
-
+                    <div className='w-[410px] relative h-[400px]  flex justify-center items-center'>
+                        <div className='absolute w-[250px] h-[250px] top-0 right-0'>
+                            <Image src='/svgs/Rectangle.svg' alt='' fill />
+                        </div>
+                        <div className='absolute w-[250px] h-[250px] bottom-0 left-0'>
+                            <Image src='/svgs/Rectangle.svg' alt='' fill />
+                        </div>
+                        <div className='relative w-[380px] h-[370px]'>
+                            <Image src={heroImg} alt='' fill />
+                        </div>
 
                     </div>
                 </div>
@@ -344,5 +351,42 @@ export const Gallery: React.FC = () => {
             </div>
             <Slider images={images} />
         </div >
+    )
+}
+
+export const ContactUs = () => {
+    return (
+        <div className='py-10 pl-10  bgImage flex items-center justify-evenly'>
+            <div className={` flex flex-col w-1/3 ml-5 space-y-5 `}>
+                <div className={`${cormorantUpright.className}`}>
+                    <h1 className={`text-[white] text-sm `}>Contact</h1>
+                    <div className={`w-[30px] relative flex h-[10px] `}>
+                        <Image src={spoon} fill alt='' />
+                    </div>
+                    <h1 className={`text-[#DCCA87] text-[35px] `}>Find Us</h1>
+                </div>
+
+                <p className='font-light text-base'>Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 7SG</p>
+                <ul className='space-y-2'>
+                    <h1 className={`${cormorantUpright.className} text-sm text-[#DCCA87]`}>Opening Hours</h1>
+                    <li className='text-[12px]'>Mon - Fri: 10:00 am - 02:00 am</li>
+                    <li className='text-[12px]'>Sat - Sun: 10:00 am - 03:00 am</li>
+                </ul>
+                <Button btnValue='Visit Us' className='w-[120px] h-[35px] text-[10px] font-semibold tracking-widest' />
+            </div>
+            <div className='w-[410px] relative h-[400px]  flex justify-center items-center'>
+                <div className='absolute w-[250px] h-[250px] top-0 right-0'>
+                    <Image src='/svgs/Rectangle.svg' alt='' fill />
+                </div>
+                <div className='absolute w-[250px] h-[250px] bottom-0 left-0'>
+                    <Image src='/svgs/Rectangle.svg' alt='' fill />
+                </div>
+                <div className='relative w-[380px] h-[370px]'>
+                    <Image src='/Images/ContactUs.png' alt='' fill />
+                </div>
+
+            </div>
+
+        </div>
     )
 }

@@ -1,4 +1,4 @@
-import { About, Awards, ChefWord, Herosection, Menu, Video, Gallery } from '@/components/Landing page/Landingpage'
+import { About, Awards, ChefWord, Herosection, Menu, Video, Gallery, ContactUs } from '@/components/Landing page/Landingpage'
 import { openSans } from '@/styles/font'
 import Head from 'next/head'
 
@@ -18,6 +18,7 @@ export default function Home() {
         <Video />
         <Awards />
         <Gallery />
+        <ContactUs />
       </main>
     </>
   )
