@@ -27,13 +27,12 @@ const Slider: React.FC<SliderComponentProps> = ({ images }) => {
                     onMouseEnter={() => handleMouseEnter(index)}
                     onMouseLeave={() => handleMouseLeave(index)}
                 >
-                    <Image src={src} alt='' layout="fill" objectFit="cover" />
+                    <Image src={src} alt='' fill className="object-cover" />
                     <Image
                         src='/Images/gallery/Hover image.png'
                         alt=''
-                        layout="fill"
-                        objectFit="cover"
-                        className={`absolute ${hoveredStates === index ? '' : 'hidden'}`} />
+                        fill
+                        className={`absolute object-cover ${hoveredStates === index ? '' : 'hidden'}`} />
                 </div>
             ))}
         </div>

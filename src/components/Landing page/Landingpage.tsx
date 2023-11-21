@@ -247,8 +247,11 @@ export const ChefWord = () => {
 
 export const Video = () => {
     return (
-        <div className='relative w-full h-[520px] cursor-pointer'>
-            <Image src='/Images/Video.png' fill alt='' />
+        <div className='relative w-full h-[520px] flex justify-center items-center '>
+            <Image src='/Images/VidImg.png' fill alt='' />
+            <div className='relative w-[70px] h-[80px] cursor-pointer scale-100 hover:scale-110 '>
+                <Image src='/svgs/play.svg' fill alt='' />
+            </div>
         </div>
 
     )
